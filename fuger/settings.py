@@ -119,7 +119,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/portfolio/static/portfolio/static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = '/portfolio/static/portfolio/static/'
+
+MEDIA_ROOT = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
