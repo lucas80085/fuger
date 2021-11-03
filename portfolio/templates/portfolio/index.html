@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">FuGer Inc.</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#founder" class="nav__link">Team</a></li>
+                        <!--<li class="nav__item"><a href="#board" class="nav__link">Board of Directors</a></li>-->
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+
+            
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Wir sind <span class="home__title-color">FuGer Inc.</span> -<br></h1> <h2 class ="home__title_two">Die Zukunft der deutschen Altenpflege</h2>
+                </div>
+
+                <div class="home__social">
+                </div>
+                <div class="home__img">
+                    <img src="{% static 'portfolio/home.png' %}" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="{% static 'portfolio/about.jpg' %}" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Über uns</h2>
+                        <p class="about__text">FuGer Inc. ist einer der innovativsten Betreiber von Altenpflegeheimen in Deutschland. Wir betreuen in unseren, mit der neuesten Technik ausgestatteten, Pflegeeinrichtungen Senioren in familiärer Umgebung. Unser kompetentes Team sorgt dabei für eine bestmögliche Betreuung unserer Bewohner.</p>
+                    </div>
+                </div>
+                <h2 class="team__subtitle">Unsere Werte</h2>
+                <div class="werte__container">
+                    <div class="wert__container">
+                        <div class="werte__img">
+                            <img src="{% static 'portfolio/konektivität.png' %}" alt="">
+                        </div>
+                        
+                        <div>
+                            <h2 class="werte__subtitle">Konnektivität</h2>
+                            <p class="werte__text">Bei FuGer Inc. ist jeder Angestellte und jeder Gepflegte Teil eines großen Kommunikationssystems, welches direkt zur obersten Führungsebene reicht. Dadurch können Verbesserungen an unseren Heimen schnellstmöglich umgesetzt und Feedback sofort eingeholt werden.</p>
+                        </div>
+                    </div>
+                    <div class="wert__container">
+                        <div class="werte__img">
+                            <img src="{% static 'portfolio/agilität.png' %}" alt="">
+                        </div>
+                        
+                        <div>
+                            <h2 class="werte__subtitle">Agilität</h2>
+                            <p class="werte__text">Durch unser erfahrenes Führungsteam, welches Kenntnisse verschiedener Branchen in sich vereint, erkennen wir relevante neue Entwicklungen früh und setzen diese sofort um, sofern diese, für unsere Angestellten oder Bewohner, merkliche Vorteile bieten.</p>
+                        </div>
+                    </div>
+                    <div class="wert__container">
+                        <div class="werte__img">
+                            <img src="{% static 'portfolio/Menschlichkeit.png' %}" alt="">
+                        </div>
+                        
+                        <div>
+                            <h2 class="werte__subtitle">Menschlichkeit</h2>
+                            <p class="werte__text">Als sehr intime Dienstleistung steht bei uns die Menschlichkeit in der Altenpflege im Vordergrund. Sowohl unsere Patienten als auch unsere Mitarbeiter sollen sich als Teil einer großen Familie fühlen. Deshalb nehmen sich die Verantwortlichen von FuGer Inc. die Sorgen und Ängste dieser Menschen besonders zu Herzen und versuchen sie bestmöglich zu bewältigen.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--===== Founder =====-->
+            <section class="about section " id="founder">
+                <h2 class="section-title">Team</h2>
+                <h2 class="team__subtitle">Founders</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="{% static 'portfolio/about_mario.jpg' %}" alt="">
+                    </div>
+                    <div>
+                        <h2 class="about__subtitle">Mario Müller</h2>
+                        <h3 class="about__position">Co-CEO</h3>
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/mario-m%C3%BCller-4b713b21a/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>                    </div>
+                        </div>
+                    <div class="about__img">
+                        <img src="{% static 'portfolio/about_lucas.jpg' %}" alt="">
+                    </div>
+                    <div>
+                        <h2 class="about__subtitle">Lucas Wessel</h2>
+                        <h3 class="about__position">Co-CEO</h3>
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/lucas-wessel-5665a2220/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>                        </div>        
+                    </div>
+                </div>
+            </section>
+
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">FuGer Inc.</p>
+            <div class="footer__social">
+            </div>
+            <p>&#169; FuGer Inc. copyright all rights reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="{% static 'portfolio/main.js' %}"></script>
+    </body>
+</html>
