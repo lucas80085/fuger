@@ -12,3 +12,4 @@ sqlparse==0.4.1
 virtualenv==20.4.7
 virtualenvwrapper-win==1.2.6
 whitenoise==5.3.0
+django-heroku==21.1.1
